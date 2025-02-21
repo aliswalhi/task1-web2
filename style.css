@@ -1,0 +1,132 @@
+:root {
+    --blue: #5f9cff;
+    --pink: #f268a9;
+    --light-purple: #eef2ff;
+    --light-yellow: #fefbf2;
+    --light-green: #daf2f1;
+}
+
+
+.bg-light-purple { background-color: var(--light-purple); }
+.bg-light-yellow { background-color: var(--light-yellow); }
+.bg-light-green { background-color: var(--light-green); }
+.image {
+    width: 350px;
+    height: 300px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    display: inline-block;
+}
+.logos-section {
+    background-color: #fbfbfb; 
+    padding: 2rem 0;
+}
+
+.client-logo {
+    height: 60px;
+    width: 40px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.client-logo:hover {
+    opacity: 0.8; 
+}
+
+.btn-primary-b {
+    background-color: var(--pink);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-b:hover {
+    background-color: #e45594;
+    transform: translateY(-2px);
+}
+
+.btn-secondary-b {
+    background-color: var(--blue);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-b:hover {
+    background-color: #4d8bff;
+    transform: translateY(-2px);
+}
+
+
+.video-section {
+    background-color: var(--light-green);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.features-section {
+    padding: 80px 0;
+}
+  .feature-icon {
+    font-size: 40px;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+  .feature-text {
+    color: #6c757d;
+}
+.social-icons a {
+    font-size: 1.2rem;
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--blue); 
+}
+
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .btn-primary-b,
+    .btn-secondary-b {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    .client-logo {
+        height: 60px;
+    }
+
+    .logos-section .row {
+        flex-wrap: wrap; 
+    }
+
+    .logos-section .col-auto {
+        margin-bottom: 1rem; 
+    }
+    .video-container {
+        padding-bottom: 75%;
+    }
+}
